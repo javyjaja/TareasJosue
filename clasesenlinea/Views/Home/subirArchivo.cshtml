@@ -1,0 +1,32 @@
+﻿@model clasesenlinea.Models.usuario_material
+
+
+
+
+   
+    <div>
+        <p>
+            texto texto texto
+        </p>
+       
+    </div>
+    <div class="text-danger">
+        <h3>
+            Estatus: @ViewBag.estatus 
+        </h3>
+    </div>
+    <div>
+
+        @using (Html.BeginForm("subirArchivo", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.TextBoxFor(m => m.ArchivoFisico, new { type = "file" })
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+
+                    <input type="submit" value="Subir archivo" class="btn btn-default" />
+                </div>
+            </div>
+        }
+    </div>

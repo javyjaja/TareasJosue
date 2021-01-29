@@ -1,0 +1,55 @@
+﻿.cuadrologin {
+    top: 40%;
+    position: absolute;
+    width: 100%;
+}
+.cuadrologinPadre{
+    position:relative;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.textotitulo {
+  
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-weight: 900;
+    color: black;
+    background-color: orange;
+}
+.fondoazul2 {
+    background-color: #1B3257;
+}
+.margenarriba {
+    margin-top: 200px;
+}
+.bordestabla tr td {
+    border: solid 1px black;
+}
+#divVideo{
+    background-color:#eeeeee;
+    border:solid 1px #dddddd;
+    border-radius:5px;
+}

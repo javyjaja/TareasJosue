@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div class=" container">
+
+        <p>
+            Profesor: Ing. Francisco Josué Hernández Rangel
+        </p>
+        <p>
+            Objetivos del curso:
+
+        </p>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <table class="table bordestabla">
+                    <tr>
+                        <td style="width:10%">
+                            1
+                        </td>
+                        <td style="width:60%">
+                            descripsion
+                        </td>
+                        <td style="width:30%">
+                            <button class="btn btn-primary" onclick="mostrarvideo();">
+                                <span style="background-color:red">
+                                    <i class="fab fa-youtube fa-200px"></i>
+                                </span>
+                                ver
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%">
+                            2
+                        </td>
+                        <td style="width:60%">
+                            descripsion
+                        </td>
+                        <td style="width:30%">
+                            <button class="btn btn-primary" onclick="mostrarvideo();">
+                                <span style="background-color:red">
+                                    <i class="fab fa-youtube fa-200px"></i>
+                                </span>
+                                ver
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%">
+                            3
+                        </td>
+                        <td style="width:60%">
+                            descripsion
+                        </td>
+                        <td style="width:30%">
+                            <button class="btn btn-primary" onclick="mostrarvideo();">
+                                <span style="background-color:red">
+                                    <i class="fab fa-youtube fa-200px"></i>
+                                </span>
+                                ver
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+
+                <div>
+
+                    Mis evidencias
+
+                </div>
+                <table class="table bordestabla">
+                    <tr>
+                        <td style="width:10%">
+                            1
+                        </td>
+                        <td style="width:60%">
+                            Tarea 1
+                        </td>
+                        <td>
+                            pendiente
+                        </td>
+                        <td style="width:30%">
+                            @Html.ActionLink("Ver detalles", "subirArchivo", new { id = 1 }, new { @class = "btn btn-primary btn-xs"})
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:10%">
+                            2
+                        </td>
+                        <td style="width:60%">
+                            Tarea 2
+                        </td>
+                        <td>
+                            pendiente
+                        </td>
+                        <td style="width:30%">
+                            @Html.ActionLink("Ver detalles", "subirArchivo", new { id = 2 }, new { @class = "btn btn-primary btn-xs"})
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%">
+                            3
+                        </td>
+                        <td style="width:60%">
+                            Tarea 3
+                        </td>
+                        <td>
+                            pendiente
+                        </td>
+                        <td style="width:30%">
+                            @Html.ActionLink("Ver detalles", "subirArchivo", new { id = 3 }, new { @class = "btn btn-primary btn-xs"})
+                        </td>
+                    </tr>
+                </table>
+
+                <div class=" hidden" id="divVideo">
+                    <div style="text-align:right;margin-right:20px;" onclick="CerrarVideo();">
+                        <h4 style="cursor:pointer;">
+                            X
+                        </h4>
+                    </div>
+                    <div style=" text-align:center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JvFbbkWxwU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        </div>
