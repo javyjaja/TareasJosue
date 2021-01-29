@@ -17,7 +17,7 @@ namespace clasesenlinea.Controllers
         }
         public ActionResult Index()
         {
-            Session["usuarioEmail"] = "javierhr_0321@hotmail.com";
+           // Session["usuarioEmail"] = "javierhr_0321@hotmail.com";
             if (Session["usuarioEmail"] == null)
             {
                 return RedirectToAction("login", "Home");
@@ -29,18 +29,18 @@ namespace clasesenlinea.Controllers
         {
             Usuario usuarioactual = new Usuario();
             usuarioactual.usuarioId = 1;
-           /* usuario_material _usuario_material = db.usuario_materiales.Where(x => x.usuarioId == usuarioactual.usuarioId).
+            usuario_material _usuario_material = db.usuario_materiales.Where(x => x.usuarioId == usuarioactual.usuarioId).
                 Where(x => x.TareaId == id).FirstOrDefault();
             if (_usuario_material == null) { ViewBag.estatus = "Pendiente"; } else { ViewBag.estatus = "Entregado"; }
-            */
-            var _usuario_material = new usuario_material();
+            
+            ///var _usuario_material = new usuario_material();
             return View(_usuario_material);
         }
 
         [HttpPost]
         public ActionResult subirArchivo(usuario_material o)
         {
-            string ruta = @"C:/codigo/DB/";
+            string ruta = Server.MapPath("/evidencias/");
             string archivo = ( o.usuarioId.ToString() + "_" + o.TareaId.ToString() +"_" + DateTime.Now.ToString("yyyyMMddHHmmss") + "_"+ o.ArchivoFisico.FileName ).ToLower();
             o.ArchivoFisico.SaveAs(ruta + archivo);
 
@@ -68,6 +68,7 @@ namespace clasesenlinea.Controllers
                 }
                 else
                 {
+                    Session["usuarioEmail"] = O.username;
                     return View("Index");
                 }
                                                 

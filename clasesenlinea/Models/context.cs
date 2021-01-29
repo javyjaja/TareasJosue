@@ -8,9 +8,10 @@ namespace clasesenlinea.Models
 {
     public class context:DbContext
     {
-        public context() : base("strCon") { }
+        public context() : base("strConn") { }
         public DbSet<Usuario> usuarios { get; set; }
         public DbSet<usuario_material> usuario_materiales { get; set; }
+        public DbSet<Materiales> _materiales { get; set; }
         
     }
 }

@@ -46,16 +46,16 @@ namespace clasesenlinea.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "usuarioId,nombre,password,apellido")] Usuario usuario)
+        public ActionResult Create( Usuario _usuario)
         {
             if (ModelState.IsValid)
             {
-                db.usuarios.Add(usuario);
+                db.usuarios.Add(_usuario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(usuario);
+            return View(_usuario);
         }
 
         // GET: Usuarios/Edit/5

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -14,6 +15,7 @@ namespace clasesenlinea.Models
         public int materialId { get; set; }
         public DateTime fecha { get; set; }
         public int TareaId { get; set; }
+        [NotMapped]
         public HttpPostedFileBase ArchivoFisico { get; set; }
 
 

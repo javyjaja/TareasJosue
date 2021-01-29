@@ -132,13 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202101171921026_uno.cs" />
-    <Compile Include="Migrations\202101171921026_uno.designer.cs">
-      <DependentUpon>202101171921026_uno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\context.cs" />
-    <Compile Include="Models\imagen.cs" />
     <Compile Include="Models\Materiales.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\usuario_material.cs" />
@@ -192,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="evidencias\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -205,11 +200,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202101171921026_uno.resx">
-      <DependentUpon>202101171921026_uno.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
