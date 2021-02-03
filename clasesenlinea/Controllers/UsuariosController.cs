@@ -50,9 +50,11 @@ namespace clasesenlinea.Controllers
         {
             if (ModelState.IsValid)
             {
+                _usuario.FechaCreacion = DateTime.Now;
                 db.usuarios.Add(_usuario);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                Session["usuarioEmail"] = _usuario.username;
+                return RedirectToAction("Index","Home");
             }
 
             return View(_usuario);

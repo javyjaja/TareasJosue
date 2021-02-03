@@ -271,3 +271,6 @@ C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.csproj.CoreCom
 C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.csproj.CopyComplete
 C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.dll
 C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.pdb
+C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.Migrations.InitialCreate.resources
+C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.csproj.GenerateResource.cache
+C:\Codigo\jouse\TareasJosue\clasesenlinea\obj\Debug\clasesenlinea.Migrations.usu1.resources

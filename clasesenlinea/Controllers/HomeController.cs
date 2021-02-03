@@ -25,7 +25,6 @@ namespace clasesenlinea.Controllers
             return View();
         }
         public ActionResult subirArchivo(int id)
-
         {
             Usuario usuarioactual = new Usuario();
             usuarioactual.usuarioId = 1;
